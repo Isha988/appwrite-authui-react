@@ -1,5 +1,18 @@
-This example was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Appwrite AuthUI React - Example app
 
-It is linked to the react-appwrite-authui package in the parent directory for development purposes.
+This is a sample react application showing the usage of react-appwrite-authui package.
 
-You can run `npm install` and then `npm start` to test your package.
+## Install and Run
+
+1. Create Appwrite project in appwrite console
+2. Make All the necessary configuartions
+3. Add api endpoint and project Id in appwrite.js file inside config folder inside src folder of example app
+4. Install all the dependencies using the commpand
+    ```bash
+    npm install
+   ```
+5. Then, run the application using 
+    ```bash
+    npm start
+    ```
+6. Application will be running at http://localhost:3000 in your browser.

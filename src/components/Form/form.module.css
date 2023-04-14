@@ -1,0 +1,49 @@
+/* form styling */
+.formHeading{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+}
+.form label{
+    text-transform: capitalize;
+    width: 100%;
+}
+.formInputCover, .form{
+    margin-bottom: 1rem;
+    position: relative;
+}
+.form input{
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border-radius: 0.3rem;
+    border: 1px solid var(--secondaryLight);
+    outline: none;
+}
+.form input:focus{
+    border-color: var(--theme);
+}
+.formSubmitBtn{
+    margin-top: 1rem;
+    background-color: var(--theme);
+    border-color: var(--theme) !important;
+    color: var(--light);
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+.formSubmitBtn:hover{
+    opacity: 0.8;
+}
+.formExtraComponent{
+    text-align: right;
+}
+.formError{
+    position: absolute;
+    bottom: -1rem;
+    font-size: 0.8rem;
+    color: var(--error);
+}
+.formError ~ input{
+    border-color: var(--error);
+}

@@ -1,0 +1,53 @@
+/* link button component */
+
+.linkBtn{
+    color: var(--theme);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+.linkBtn:hover{
+    opacity: 0.8;
+}
+
+/* image button component */
+
+.imageBtn{
+    width: 100%;
+    padding: 0.5rem 1rem;
+    background-color: transparent;
+    border-radius: 0.3rem;
+    border: 1px solid var(--secondaryLight);
+    outline: none;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    text-transform: capitalize;
+    font-size: 0.9rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.imageBtn:hover, .activeBtn{
+    background-color: var(--theme);
+    border-color: var(--theme);
+    color: white;
+}
+.btnImageCover{
+    background-color: var(--theme);
+    background: radial-gradient(circle, var(--theme) 0%, var(--light) 100%);
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    padding: 3px;
+}
+.activeBtn{
+    background-color: var(--theme);
+    color: var(--light);
+}
+.activeBtn:hover{
+    opacity: 0.8;
+}

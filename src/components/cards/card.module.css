@@ -1,0 +1,17 @@
+.card{
+    text-align: center; 
+}
+.card img{
+    width: 100px;
+}
+.card p{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+.card .cardHeading{
+    color: var(--theme);
+    font-size: 1.7rem;
+    font-weight: 600;
+    margin-bottom: 0;
+    text-transform: capitalize;
+}
