@@ -155,7 +155,7 @@ function AppwriteAuth(
 
         {
           // OAuth buttons
-          authOptions[AVAILABLE_AUTH_OPTIONS.OAUTH].map((provider, index) => (
+          authOptions[AVAILABLE_AUTH_OPTIONS.OAUTH] && authOptions[AVAILABLE_AUTH_OPTIONS.OAUTH].map((provider, index) => (
             <AuthMethod.OAuth 
               key = {index}
               account = {appwriteAccount}
