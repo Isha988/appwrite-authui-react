@@ -24,7 +24,7 @@
     "deploy": "gh-pages -d example/build"
   },
   "peerDependencies": {
-    "appwrite": ">=^10.2.0",
+    "appwrite": "^10.2.0",
     "react": ">=^16.0.0",
     "simple-react-validator": ">=^1.6.2"
   },
