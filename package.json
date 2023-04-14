@@ -1,6 +1,6 @@
 {
   "name": "appwrite-authui-react",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Ui helper library for adding appwrite auth in react.js ",
   "author": "Isha988",
   "license": "MIT",
