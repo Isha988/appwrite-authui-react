@@ -1,10 +1,11 @@
-import React, { useState, useEffect } from 'react'
-import { account } from './config/appwrite'
+import { useState, useEffect } from "react";
+import {account} from "./config/appwrite"
+import AppwriteAuth from "appwrite-authui-react";
+import "appwrite-authui-react/dist/index.css";
+import "./App.css";
 
-import AppwriteAuth from 'appwrite-authui-react'
-import 'appwrite-authui-react/dist/index.css'
+function App() {
 
-const App = () => {
   const [user, setUser] = useState()
   useEffect(() => {
     async function checkExistingUser() {
@@ -18,38 +19,37 @@ const App = () => {
     checkExistingUser()
   }, [])
 
+  const onClick = () => {
+    account.deleteSessions();
+    setUser(null);
+  }
+
   return (
-    <>
-      <header>Demo App</header>
-      {!user ? (
-        <AppwriteAuth
-          appwriteAccount={account}
-          authOptions={{
-            phone: true,
-            anonymous: true,
-            magicurl: true,
-            oauth: ['google', 'github'],
-            email: true
-          }}
-        />
-      ) : (
-        <div class="userDetails">
-          <p>Name: {user.name}</p>
-          <p>Email: {user.email}</p>
-          <p>Phone: {user.phone}</p>
-          <p>{user.status}</p>
-          <button
-            onClick={() => {
-              account.deleteSessions()
-              setUser(null)
+    <div className="App">
+      <header>DEMO APP</header>
+      {
+        (!user) ? (
+          <AppwriteAuth
+            appwriteAccount={account}
+            authOptions={{
+              email: true,
+              phone: true,
+              magicurl: true,
+              anonymous: true,
+              oauth: ["google", "github"],
             }}
-          >
-            logout
-          </button>
-        </div>
-      )}
-    </>
-  )
+          />
+        ):(
+          <div class="userDetails">
+              <p>Name: {user.name}</p>
+              <p>Email: {user.email}</p>
+              <p>Phone: {user.phone}</p>
+              <button onClick={onClick}>Logout</button>
+          </div>
+        )
+      }
+    </div>
+  );
 }
 
-export default App
+export default App;

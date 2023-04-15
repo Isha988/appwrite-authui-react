@@ -1,0 +1,29 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root{
+  --primary: #f02e65
+}
+header{
+  background-color:var(--primary);
+  color: white;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.userDetails{
+  text-align: center;
+  font-size: 1rem;
+}
+.userDetails button{
+  color: white;
+  background-color: var(--primary);
+  padding : 0.6rem 1.5rem;
+  border: none;
+  outline: none;
+  margin: 1rem;
+  border-radius: 5px;
+}

@@ -28,7 +28,11 @@ It provides great error handling and form validations feature.
 
 ## Demo
 
-For an example on how to use the Appwrite AuthUI React have a look at the [example]('https://github.com/Isha988/appwrite-authui-react/tree/main/example') folder.
+For a video demonstration of the library visit [video link](https://drive.google.com/file/d/1SRO04FOeM0v4XhHu2zMuPHqMTNhF1KEi/view?usp=sharing)
+
+For an example on how to use the Appwrite AuthUI React have a look at the [example](https://github.com/Isha988/appwrite-authui-react/tree/main/example) folder.
+
+![Screenshot 2023-04-14 at 08-04-39 react-appwrite-authui](https://user-images.githubusercontent.com/89572340/232185337-e79b5e95-ca75-4017-a9ef-cc86b07dc6fa.png)
 
 ## Install
 

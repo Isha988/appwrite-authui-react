@@ -7,7 +7,7 @@ This is a sample react application showing the usage of react-appwrite-authui pa
 1. Create Appwrite project in appwrite console
 2. Make All the necessary configuartions
 3. Add api endpoint and project Id in appwrite.js file inside config folder inside src folder of example app
-4. Install all the dependencies using the commpand
+4. Install all the dependencies using the command
     ```bash
     npm install
    ```
